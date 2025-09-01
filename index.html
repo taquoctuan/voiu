@@ -300,7 +300,7 @@
                                 <div class="timeline-panel wow fadeInLeft" data-wow-delay="0.7s" style="">
                                     <div class="" style="padding: 0;width: 102px;position: relative;float: left">
                                         <!-- x11 -->
-                                        <img src="images/anh10.png" alt="" style="width: 102px;height: 102px">
+                                        <img src="images/anh10x.png" alt="" style="width: 102px;height: 102px">
                                     </div>
                                     <div class="" style="padding: 0 15px 0 135px">
                                         <div class="timeline-heading">
@@ -348,7 +348,7 @@
                                 <div class="timeline-panel wow fadeInLeft" data-wow-delay="0.7s" style="">
                                     <div class="" style="padding: 0;width: 102px;position: relative;float: left">
                                         <!-- x12 -->
-                                        <img src="images/anh12.png" alt="" style="width: 102px;height: 102px">
+                                        <img src="images/anh12x.webp" alt="" style="width: 102px;height: 102px">
                                     </div>
                                     <div class="" style="padding: 0 15px 0 135px">
                                         <div class="timeline-heading">
@@ -471,12 +471,21 @@
             </ul>
         </div>
 
-        <p class="text-center" style="font-size: 16px">Anh hi vọng chúng taa của sauu này luôn có nhau</p>
+        <p class="text-center" style="font-size: 16px">Anh hi vọng chúng ta của sau này luôn có nhau</p>
 
         <!-- music -->
-        <audio controls autoplay id="playAudio" style="display: none;">
+        <audio id="playAudio" style="display: none;">
             <source src="./pham-dinh-thai-ngan-x-vux.mp3" type="audio/mpeg">
         </audio>
+
+        <script>
+            document.addEventListener("click", () => {
+            let audio = document.getElementById("playAudio");
+            if (audio.paused) {
+            audio.play();
+                }
+            });
+</script>
 
         <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
